@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vM7-9l-O2M">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qIp-2w-l2f">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -108,9 +108,6 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zxu-r6-yLe">
-                                <rect key="frame" x="0.0" y="646" width="414" height="216"/>
-                            </pickerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FyR-6D-t3G"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -118,15 +115,11 @@
                             <constraint firstItem="EXa-hy-Cpm" firstAttribute="centerY" secondItem="4fq-wa-lkV" secondAttribute="centerY" id="2uw-sz-8GH"/>
                             <constraint firstItem="Q74-VU-gBI" firstAttribute="leading" secondItem="FyR-6D-t3G" secondAttribute="leading" constant="20" id="BLV-Fr-3r6"/>
                             <constraint firstItem="FyR-6D-t3G" firstAttribute="trailing" secondItem="Q74-VU-gBI" secondAttribute="trailing" constant="20" id="O12-l0-mlQ"/>
-                            <constraint firstItem="Zxu-r6-yLe" firstAttribute="trailing" secondItem="FyR-6D-t3G" secondAttribute="trailing" id="d24-bv-5qX"/>
-                            <constraint firstItem="FyR-6D-t3G" firstAttribute="bottom" secondItem="Zxu-r6-yLe" secondAttribute="bottom" id="dSk-HN-WZA"/>
                             <constraint firstItem="Q74-VU-gBI" firstAttribute="top" secondItem="FyR-6D-t3G" secondAttribute="top" constant="20" id="ndt-Jc-kuR"/>
                             <constraint firstItem="EXa-hy-Cpm" firstAttribute="centerX" secondItem="4fq-wa-lkV" secondAttribute="centerX" id="peQ-cF-gQs"/>
-                            <constraint firstItem="Zxu-r6-yLe" firstAttribute="leading" secondItem="FyR-6D-t3G" secondAttribute="leading" id="yZN-s9-Zqc"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="lottoPickerView" destination="Zxu-r6-yLe" id="a1Y-JI-DZg"/>
                         <outlet property="numberTextField" destination="Q74-VU-gBI" id="arz-Em-JyT"/>
                     </connections>
                 </viewController>
@@ -134,8 +127,116 @@
             </objects>
             <point key="canvasLocation" x="848" y="84"/>
         </scene>
+        <!--Translate View Controller-->
+        <scene sceneID="FWr-6b-ClB">
+            <objects>
+                <viewController id="7AL-49-wEa" customClass="TranslateViewController" customModule="NetworkBasicPractice_SeSACWeek4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FaG-kP-ev4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="e9D-BQ-zxP">
+                                <rect key="frame" x="20" y="94" width="374" height="200"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="2al-3E-3nv"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kfo-PM-mlU">
+                                <rect key="frame" x="110" y="539" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iyl-lZ-Kl0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="e9D-BQ-zxP" firstAttribute="leading" secondItem="iyl-lZ-Kl0" secondAttribute="leading" constant="20" id="E2F-SE-ice"/>
+                            <constraint firstItem="e9D-BQ-zxP" firstAttribute="top" secondItem="iyl-lZ-Kl0" secondAttribute="top" constant="50" id="WjB-zz-mlP"/>
+                            <constraint firstItem="iyl-lZ-Kl0" firstAttribute="trailing" secondItem="e9D-BQ-zxP" secondAttribute="trailing" constant="20" id="iu2-PE-crG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="userInputTextView" destination="e9D-BQ-zxP" id="2z1-AZ-52Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ybZ-De-g40" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1651" y="85"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="c4J-c3-Xc4">
+            <objects>
+                <viewController id="qIp-2w-l2f" customClass="WebViewController" customModule="NetworkBasicPractice_SeSACWeek4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PHJ-j4-GLs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Idd-0E-Z8d">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="dn9-GC-gK1"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zD9-HI-PY3">
+                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="DlG-ey-qwH"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="Item" id="TAN-IT-9VY"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="HSy-IQ-bcf"/>
+                                    <barButtonItem title="새로고침" id="kcI-BV-jHw"/>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="baF-My-7my"/>
+                                    <barButtonItem title="Item" id="1VA-b5-Sbn"/>
+                                </items>
+                            </toolbar>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WSV-gD-Qvd">
+                                <rect key="frame" x="0.0" y="88" width="414" height="730"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="I78-KK-ROb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Idd-0E-Z8d" firstAttribute="leading" secondItem="I78-KK-ROb" secondAttribute="leading" id="4iO-iW-OIa"/>
+                            <constraint firstItem="WSV-gD-Qvd" firstAttribute="top" secondItem="Idd-0E-Z8d" secondAttribute="bottom" id="DRd-h3-icZ"/>
+                            <constraint firstItem="zD9-HI-PY3" firstAttribute="top" secondItem="WSV-gD-Qvd" secondAttribute="bottom" id="Kha-Tc-vqj"/>
+                            <constraint firstItem="I78-KK-ROb" firstAttribute="bottom" secondItem="zD9-HI-PY3" secondAttribute="bottom" id="Pay-s6-5eL"/>
+                            <constraint firstItem="zD9-HI-PY3" firstAttribute="leading" secondItem="I78-KK-ROb" secondAttribute="leading" id="Ta2-Pr-mu3"/>
+                            <constraint firstItem="I78-KK-ROb" firstAttribute="trailing" secondItem="WSV-gD-Qvd" secondAttribute="trailing" id="VJS-cr-SVl"/>
+                            <constraint firstItem="zD9-HI-PY3" firstAttribute="trailing" secondItem="I78-KK-ROb" secondAttribute="trailing" id="Zgr-BX-6U1"/>
+                            <constraint firstItem="WSV-gD-Qvd" firstAttribute="leading" secondItem="I78-KK-ROb" secondAttribute="leading" id="jWx-m2-nTT"/>
+                            <constraint firstItem="Idd-0E-Z8d" firstAttribute="trailing" secondItem="I78-KK-ROb" secondAttribute="trailing" id="ls8-qy-ptR"/>
+                            <constraint firstItem="Idd-0E-Z8d" firstAttribute="top" secondItem="I78-KK-ROb" secondAttribute="top" id="obS-a9-fy3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="searchBar" destination="Idd-0E-Z8d" id="W3a-qM-Gu6"/>
+                        <outlet property="webView" destination="WSV-gD-Qvd" id="Gbh-WV-fCF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OxY-Pd-QJK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2452" y="88"/>
+        </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

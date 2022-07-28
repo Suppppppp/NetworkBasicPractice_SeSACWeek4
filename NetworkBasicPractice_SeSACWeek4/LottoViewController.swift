@@ -12,12 +12,19 @@ class LottoViewController: UIViewController  {
 
     
     @IBOutlet weak var numberTextField: UITextField!
-    @IBOutlet weak var lottoPickerView: UIPickerView!
+//    @IBOutlet weak var lottoPickerView: UIPickerView!
+    
+    
+    var lottoPickerView = UIPickerView()
     
     let numberList:[Int] = Array(1...1025).reversed()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        numberTextField.tintColor = .clear
+        numberTextField.inputView = lottoPickerView
         
         lottoPickerView.delegate = self
         lottoPickerView.dataSource = self
