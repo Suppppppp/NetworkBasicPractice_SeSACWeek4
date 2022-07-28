@@ -7,12 +7,32 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, ViewPresentableProtocol {
+    
+    var navigationTitleString: String = "대장님의 다마고치"
+    
+    
+    var backgroundColor: UIColor = .blue
+    
+    
+    func configureView() {
+        view.backgroundColor = .blue
+        backgroundColor = .red
+    }
+    
+    func configureLabel() {
+
+    }
+
+
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        
     }
+    
 
 
 }

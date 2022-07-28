@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC0BA9E828920CD600EC9E99 /* ViewPresentableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0BA9E728920CD600EC9E99 /* ViewPresentableProtocol.swift */; };
+		AC0BA9EA2892237000EC9E99 /* LottoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0BA9E92892237000EC9E99 /* LottoViewController.swift */; };
 		AC79836D2890DD7D00C45C43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC79836C2890DD7D00C45C43 /* AppDelegate.swift */; };
 		AC79836F2890DD7D00C45C43 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC79836E2890DD7D00C45C43 /* SceneDelegate.swift */; };
 		AC7983712890DD7D00C45C43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7983702890DD7D00C45C43 /* ViewController.swift */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC0BA9E728920CD600EC9E99 /* ViewPresentableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPresentableProtocol.swift; sourceTree = "<group>"; };
+		AC0BA9E92892237000EC9E99 /* LottoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoViewController.swift; sourceTree = "<group>"; };
 		AC7983692890DD7D00C45C43 /* NetworkBasicPractice_SeSACWeek4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkBasicPractice_SeSACWeek4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC79836C2890DD7D00C45C43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC79836E2890DD7D00C45C43 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC0BA9E628920CA300EC9E99 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				AC0BA9E728920CD600EC9E99 /* ViewPresentableProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		AC7983602890DD7D00C45C43 = {
 			isa = PBXGroup;
 			children = (
@@ -62,10 +74,12 @@
 		AC79836B2890DD7D00C45C43 /* NetworkBasicPractice_SeSACWeek4 */ = {
 			isa = PBXGroup;
 			children = (
+				AC0BA9E628920CA300EC9E99 /* Protocol */,
 				AC79836C2890DD7D00C45C43 /* AppDelegate.swift */,
 				AC79836E2890DD7D00C45C43 /* SceneDelegate.swift */,
 				AC7983702890DD7D00C45C43 /* ViewController.swift */,
 				AC7983722890DD7D00C45C43 /* Main.storyboard */,
+				AC0BA9E92892237000EC9E99 /* LottoViewController.swift */,
 				AC7983822890E4CE00C45C43 /* ListTableViewCell.swift */,
 				AC7983832890E4CE00C45C43 /* ListTableViewCell.xib */,
 				AC7983802890E1F600C45C43 /* SearchViewController.swift */,
@@ -151,7 +165,9 @@
 				AC7983712890DD7D00C45C43 /* ViewController.swift in Sources */,
 				AC79836D2890DD7D00C45C43 /* AppDelegate.swift in Sources */,
 				AC7983812890E1F600C45C43 /* SearchViewController.swift in Sources */,
+				AC0BA9EA2892237000EC9E99 /* LottoViewController.swift in Sources */,
 				AC79836F2890DD7D00C45C43 /* SceneDelegate.swift in Sources */,
+				AC0BA9E828920CD600EC9E99 /* ViewPresentableProtocol.swift in Sources */,
 				AC7983842890E4CE00C45C43 /* ListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -26,6 +26,8 @@ extension UIViewController {
 
 class SearchViewController: UIViewController , UITableViewDelegate, UITableViewDataSource {
 
+
+
     
     @IBOutlet weak var SearchTableView: UITableView!
     
@@ -43,6 +45,13 @@ class SearchViewController: UIViewController , UITableViewDelegate, UITableViewD
         SearchTableView.register(UINib(nibName: ListTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: ListTableViewCell.identifier)
 
 
+    }
+    
+    
+
+    
+    func configureLabel() {
+        
     }
     
 
